@@ -42,7 +42,7 @@ function App() {
       </main>
       
       {/* Simple Footer */}
-      <footer className="w-full py-8 text-center border-t border-white/5 mt-12 bg-slate-900/50 relative z-10">
+      <footer className="w-full py-8 text-center border-t border-blue-500/10 mt-12 bg-slate-900/50 relative z-10">
         <p className="text-slate-500 text-sm">
           &copy; {new Date().getFullYear()} Mathan S. Built with React & Tailwind.
         </p>

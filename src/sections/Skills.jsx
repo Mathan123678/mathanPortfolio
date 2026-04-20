@@ -45,9 +45,9 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
-            className="p-8 rounded-2xl bg-white/[0.02] border border-white/5"
+            className="p-8 rounded-2xl bg-blue-500/[0.02] border border-blue-500/10"
           >
-            <h3 className="text-xl font-bold text-white mb-6 tracking-wide">{category.title}</h3>
+            <h3 className="text-xl font-bold text-blue-50 mb-6 tracking-wide">{category.title}</h3>
             <div className="flex flex-wrap gap-3">
               {category.skills.map((skill, sIdx) => (
                 <motion.span
@@ -56,7 +56,7 @@ export default function Skills() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: idx * 0.1 + sIdx * 0.05 }}
-                  className="px-4 py-2 rounded-xl bg-white/[0.03] border border-white/5 text-slate-300 font-medium hover:bg-white/10 hover:text-white hover:border-blue-500/30 transition-all cursor-default"
+                  className="px-4 py-2 rounded-xl bg-blue-500/5 border border-blue-500/10 text-slate-300 font-medium hover:bg-blue-500/20 hover:text-blue-400 hover:border-blue-500/30 transition-all cursor-default"
                 >
                   {skill.name}
                 </motion.span>

@@ -20,10 +20,10 @@ export default function Experience() {
               <Briefcase size={20} className="text-blue-400" />
             </div>
 
-            <div className="bg-white/[0.02] border border-white/5 p-8 rounded-2xl hover:bg-white/[0.04] transition-colors">
+            <div className="bg-blue-500/[0.02] border border-blue-500/10 p-8 rounded-2xl hover:bg-blue-500/[0.04] transition-colors">
               <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                 <div>
-                  <h3 className="text-2xl font-bold text-white">Mobile App Developer Intern</h3>
+                  <h3 className="text-2xl font-bold text-blue-50">Mobile App Developer Intern</h3>
                   <p className="text-lg text-blue-400 font-medium">Career Ladder Software Training Institute</p>
                 </div>
                 <span className="text-slate-500 font-medium mt-2 md:mt-0 bg-slate-800 px-4 py-1 rounded-full text-sm inline-block w-fit">2023 - Present</span>

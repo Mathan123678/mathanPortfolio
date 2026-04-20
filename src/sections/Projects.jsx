@@ -41,14 +41,14 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="group flex flex-col p-8 bg-slate-800/30 rounded-3xl border border-white/5 hover:border-blue-500/30 hover:bg-slate-800/50 transition-all h-full relative overflow-hidden"
+              className="group flex flex-col p-8 bg-slate-800/30 rounded-3xl border border-blue-500/10 hover:border-blue-500/30 hover:bg-slate-800/50 transition-all h-full relative overflow-hidden"
             >
               {/* Background accent */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-blue-600/10 transition-colors" />
               
               <div className="flex flex-col flex-grow relative z-10">
                 <div className="mb-6">
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  <h3 className="text-2xl font-bold text-blue-50 mb-3 group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </h3>
                   <div className="h-1 w-12 bg-blue-500/50 rounded-full group-hover:w-20 transition-all duration-500" />
@@ -60,7 +60,7 @@ export default function Projects() {
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tech.map((t, i) => (
-                    <span key={i} className="text-[10px] uppercase tracking-wider font-bold px-3 py-1 bg-white/5 text-slate-400 rounded-lg border border-white/5 group-hover:border-blue-500/20 group-hover:text-slate-300 transition-colors">
+                    <span key={i} className="text-[10px] uppercase tracking-wider font-bold px-3 py-1 bg-blue-500/5 text-slate-400 rounded-lg border border-blue-500/10 group-hover:border-blue-500/20 group-hover:text-blue-100 transition-colors">
                       {t}
                     </span>
                   ))}
@@ -71,7 +71,7 @@ export default function Projects() {
                     href={project.github} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-white transition-colors"
+                    className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-blue-400 transition-colors"
                   >
                     <Code size={18} className="text-blue-500" /> Code
                   </a>
@@ -79,7 +79,7 @@ export default function Projects() {
                     href={project.live} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-white transition-colors"
+                    className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-blue-400 transition-colors"
                   >
                     <ExternalLink size={18} className="text-purple-500" /> Live Demo
                   </a>

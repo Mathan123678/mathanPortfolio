@@ -44,19 +44,19 @@ export default function About() {
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
               <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
-              <span><strong className="text-white">User-Centric Excellence:</strong> Beyond just code, I focus on the end-user journey, ensuring every interface is intuitive and every interaction is meaningful.</span>
+              <span><strong className="text-blue-200">User-Centric Excellence:</strong> Beyond just code, I focus on the end-user journey, ensuring every interface is intuitive and every interaction is meaningful.</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2.5 shrink-0" />
-              <span><strong className="text-white">Scalable Problem Solving:</strong> I don't just fix bugs; I build systems. I architect solutions that are prepared for growth and easy to maintain.</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-400 mt-2.5 shrink-0" />
+              <span><strong className="text-blue-200">Scalable Problem Solving:</strong> I don't just fix bugs; I build systems. I architect solutions that are prepared for growth and easy to maintain.</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="w-1.5 h-1.5 rounded-full bg-green-500 mt-2.5 shrink-0" />
-              <span><strong className="text-white">Continuous Innovation:</strong> The tech landscape moves fast, and so do I. I take pride in my ability to master new frameworks and technologies in record time.</span>
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-300 mt-2.5 shrink-0" />
+              <span><strong className="text-blue-200">Continuous Innovation:</strong> The tech landscape moves fast, and so do I. I take pride in my ability to master new frameworks and technologies in record time.</span>
             </li>
           </ul>
           <p>
-            Recently, I interned at <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 font-semibold">Career Ladder Software Training Institute</span>, where I honed my skills in mobile app development and real-world project deployment.
+            Recently, I interned at <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 font-semibold">Career Ladder Software Training Institute</span>, where I honed my skills in mobile app development and real-world project deployment.
           </p>
         </motion.div>
 
@@ -68,14 +68,14 @@ export default function About() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="p-6 rounded-2xl bg-white/[0.03] border border-white/5 hover:bg-white/[0.06] transition-colors"
+                className="p-6 rounded-2xl bg-blue-500/[0.03] border border-blue-500/10 hover:bg-blue-500/[0.06] transition-colors"
               >
                 <div className="flex items-start gap-4">
-                  <div className="p-3 bg-white/5 rounded-xl">
+                  <div className="p-3 bg-blue-500/10 rounded-xl">
                     {item.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                    <h3 className="text-xl font-bold text-blue-50 mb-2">{item.title}</h3>
                     <p className="text-slate-400">{item.desc}</p>
                   </div>
                 </div>
