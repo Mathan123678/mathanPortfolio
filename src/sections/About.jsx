@@ -39,6 +39,23 @@ export default function About() {
             I specialize in crafting high-performance, visually striking digital experiences from the ground up. Whether it's a responsive React frontend, a complex Node.js microservice architecture, or a native Android application with real-time Firebase syncing, I love turning complex problems into elegant solutions.
           </p>
           <p>
+            My approach is driven by three core pillars:
+          </p>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-500 mt-2.5 shrink-0" />
+              <span><strong className="text-white">User-Centric Excellence:</strong> Beyond just code, I focus on the end-user journey, ensuring every interface is intuitive and every interaction is meaningful.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-purple-500 mt-2.5 shrink-0" />
+              <span><strong className="text-white">Scalable Problem Solving:</strong> I don't just fix bugs; I build systems. I architect solutions that are prepared for growth and easy to maintain.</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="w-1.5 h-1.5 rounded-full bg-green-500 mt-2.5 shrink-0" />
+              <span><strong className="text-white">Continuous Innovation:</strong> The tech landscape moves fast, and so do I. I take pride in my ability to master new frameworks and technologies in record time.</span>
+            </li>
+          </ul>
+          <p>
             Recently, I interned at <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 font-semibold">Career Ladder Software Training Institute</span>, where I honed my skills in mobile app development and real-world project deployment.
           </p>
         </motion.div>

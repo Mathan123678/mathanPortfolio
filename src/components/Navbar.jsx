@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Menu, X } from "lucide-react"
+import { Menu, X, Download } from "lucide-react"
 
 const navLinks = [
   { name: "About", href: "#about" },
@@ -29,8 +29,15 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <a href="#" className="text-2xl font-heading font-bold text-white tracking-tight">
-          Mathan<span className="text-blue-500">.</span>
+        <a href="#" className="flex items-center gap-2 group">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-500/20 to-purple-500/20 border border-white/10 flex items-center justify-center text-blue-400 group-hover:scale-105 transition-transform">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6">
+              <path d="M4 20V6l8 8 8-8v14" />
+            </svg>
+          </div>
+          <span className="text-2xl font-heading font-bold text-white tracking-tight hidden sm:block">
+            Mathan<span className="text-blue-500">.</span>
+          </span>
         </a>
 
         {/* Desktop Nav */}
@@ -44,6 +51,13 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
+          <a
+            href="/resume.pdf"
+            download="Mathan_Resume.pdf"
+            className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white transition-colors"
+          >
+            <Download size={16} /> Resume
+          </a>
           <a
             href="#projects"
             className="px-5 py-2.5 rounded-full bg-white/10 hover:bg-white/20 text-white text-sm font-medium transition-all"
@@ -80,6 +94,14 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
+            <a
+              href="/resume.pdf"
+              download="Mathan_Resume.pdf"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-lg font-medium text-slate-300 hover:text-white flex items-center gap-2"
+            >
+              <Download size={20} /> Resume
+            </a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -41,36 +41,47 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="group flex flex-col bg-slate-800/50 rounded-2xl border border-white/5 overflow-hidden hover:border-white/10 transition-all h-full"
+              className="group flex flex-col p-8 bg-slate-800/30 rounded-3xl border border-white/5 hover:border-blue-500/30 hover:bg-slate-800/50 transition-all h-full relative overflow-hidden"
             >
-              <div className="w-full h-48 bg-slate-900 relative overflow-hidden flex items-center justify-center border-b border-white/5">
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10" />
-                <div className="absolute inset-0 bg-blue-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
-              </div>
+              {/* Background accent */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-blue-600/5 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-blue-600/10 transition-colors" />
+              
+              <div className="flex flex-col flex-grow relative z-10">
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                    {project.title}
+                  </h3>
+                  <div className="h-1 w-12 bg-blue-500/50 rounded-full group-hover:w-20 transition-all duration-500" />
+                </div>
 
-              <div className="p-8 flex flex-col flex-grow">
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
-                  {project.title}
-                </h3>
-                <p className="text-slate-400 mb-6 flex-grow leading-relaxed">
+                <p className="text-slate-400 mb-8 flex-grow leading-relaxed">
                   {project.description}
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tech.map((t, i) => (
-                    <span key={i} className="text-xs font-semibold px-3 py-1 bg-white/5 text-slate-300 rounded-full border border-white/10">
+                    <span key={i} className="text-[10px] uppercase tracking-wider font-bold px-3 py-1 bg-white/5 text-slate-400 rounded-lg border border-white/5 group-hover:border-blue-500/20 group-hover:text-slate-300 transition-colors">
                       {t}
                     </span>
                   ))}
                 </div>
 
-                <div className="flex items-center gap-4 mt-auto">
-                  <a href={project.github} className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">
-                    <Code size={18} /> Code
+                <div className="flex items-center gap-6 mt-auto">
+                  <a 
+                    href={project.github} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-white transition-colors"
+                  >
+                    <Code size={18} className="text-blue-500" /> Code
                   </a>
-                  <a href={project.live} className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-white transition-colors">
-                    <ExternalLink size={18} /> Live Demo
+                  <a 
+                    href={project.live} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-white transition-colors"
+                  >
+                    <ExternalLink size={18} className="text-purple-500" /> Live Demo
                   </a>
                 </div>
               </div>

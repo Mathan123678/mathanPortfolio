@@ -48,23 +48,18 @@ export default function Skills() {
             className="p-8 rounded-2xl bg-white/[0.02] border border-white/5"
           >
             <h3 className="text-xl font-bold text-white mb-6 tracking-wide">{category.title}</h3>
-            <div className="space-y-6">
+            <div className="flex flex-wrap gap-3">
               {category.skills.map((skill, sIdx) => (
-                <div key={sIdx}>
-                  <div className="flex justify-between mb-2">
-                    <span className="text-slate-300 font-medium">{skill.name}</span>
-                    <span className="text-slate-500">{skill.level}%</span>
-                  </div>
-                  <div className="h-2 w-full bg-slate-800 rounded-full overflow-hidden">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1, delay: 0.2 + sIdx * 0.1, ease: "easeOut" }}
-                      className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
-                    />
-                  </div>
-                </div>
+                <motion.span
+                  key={sIdx}
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: idx * 0.1 + sIdx * 0.05 }}
+                  className="px-4 py-2 rounded-xl bg-white/[0.03] border border-white/5 text-slate-300 font-medium hover:bg-white/10 hover:text-white hover:border-blue-500/30 transition-all cursor-default"
+                >
+                  {skill.name}
+                </motion.span>
               ))}
             </div>
           </motion.div>
