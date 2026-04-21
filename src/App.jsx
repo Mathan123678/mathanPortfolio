@@ -22,12 +22,12 @@ function App() {
         <motion.div
            animate={{ y: [0, 120, 0], x: [0, -60, 0] }}
            transition={{ duration: 30, repeat: Infinity, ease: "easeInOut", delay: 5 }}
-           className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-purple-500/20 rounded-full blur-[120px]"
+           className="absolute bottom-1/3 left-1/4 w-96 h-96 bg-indigo-500/15 rounded-full blur-[120px]"
         />
         <motion.div
            animate={{ y: [0, -80, 0], scale: [1, 1.2, 1] }}
            transition={{ duration: 20, repeat: Infinity, ease: "easeInOut", delay: 10 }}
-           className="absolute top-2/3 right-1/2 w-64 h-64 bg-emerald-500/10 rounded-full blur-[100px]"
+           className="absolute top-2/3 right-1/2 w-64 h-64 bg-cyan-500/10 rounded-full blur-[100px]"
         />
       </div>
 

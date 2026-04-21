@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { ArrowRight, Download, Mail } from "lucide-react"
+import mathanImg from "../assets/mathan.png"
 
 export default function Hero() {
   return (
@@ -21,7 +22,7 @@ export default function Hero() {
           scale: [1, 1.2, 1]
         }}
         transition={{ duration: 20, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px] pointer-events-none"
+        className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] pointer-events-none"
       />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -50,7 +51,7 @@ export default function Hero() {
             >
               Hi, I'm Mathan S
               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
                 Full Stack Developer
               </span>
             </motion.h1>
@@ -115,7 +116,7 @@ export default function Hero() {
               
               <div className="absolute inset-0 rounded-3xl overflow-hidden border-4 border-blue-500/10 shadow-2xl skew-y-3 hover:skew-y-0 transition-transform duration-500">
                 <img 
-                  src="/src/assets/mathan.png" 
+                  src={mathanImg} 
                   alt="Mathan S" 
                   className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
                 />

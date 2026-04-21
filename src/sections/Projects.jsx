@@ -81,7 +81,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm font-semibold text-slate-400 hover:text-blue-400 transition-colors"
                   >
-                    <ExternalLink size={18} className="text-purple-500" /> Live Demo
+                    <ExternalLink size={18} className="text-cyan-500" /> Live Demo
                   </a>
                 </div>
               </div>

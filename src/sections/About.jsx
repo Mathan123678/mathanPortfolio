@@ -11,12 +11,12 @@ export default function About() {
       desc: "Architecting scalable web applications with MongoDB, Express, React, and Node.js."
     },
     {
-      icon: <Smartphone size={24} className="text-purple-400" />,
+      icon: <Smartphone size={24} className="text-blue-400" />,
       title: "Android Apps",
       desc: "Building native fast and responsive apps using Java, XML, and Firebase."
     },
     {
-      icon: <Database size={24} className="text-green-400" />,
+      icon: <Database size={24} className="text-cyan-400" />,
       title: "System Design",
       desc: "Integrating IoT sensors, databases, and real-time backend services seamlessly."
     }
