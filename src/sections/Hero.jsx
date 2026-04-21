@@ -83,6 +83,13 @@ export default function Hero() {
               >
                 Contact Me <Mail size={18} />
               </a>
+              <a
+                href="/resume.pdf"
+                download="Mathan_Resume.pdf"
+                className="w-full sm:w-auto px-8 py-4 rounded-full font-semibold bg-blue-500/10 border border-blue-500/20 hover:bg-blue-500/20 active:scale-95 transition-all flex items-center justify-center gap-2 text-blue-50"
+              >
+                Download CV <Download size={18} />
+              </a>
             </motion.div>
 
             <motion.div
