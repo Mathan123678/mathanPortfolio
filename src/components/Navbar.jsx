@@ -53,7 +53,8 @@ export default function Navbar() {
         ))}
         <a
           href="/resume.pdf"
-          download="Mathan_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-2 text-sm font-medium text-slate-300 hover:text-blue-400 transition-colors"
         >
           <Download size={16} /> Resume
